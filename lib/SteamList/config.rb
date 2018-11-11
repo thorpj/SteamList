@@ -14,5 +14,16 @@ module SteamList
       @config[k] = v
     end
 
+    def url(val)
+      @config[:url] = val
+    end
+
+    def output_filename(val)
+      @config[:output_filename] = val
+    end
+
+    def output_stdout(val)
+      @config[:output_stdout] = val
+    end
   end
 end

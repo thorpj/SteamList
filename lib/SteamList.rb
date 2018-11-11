@@ -23,7 +23,7 @@ module SteamList
     attr_accessor :games
 
     def initialize(config)
-      document = HTTParty.get(config['url'])
+      document = HTTParty.get(config[:url])
       @page ||= Nokogiri::HTML(document)
       @table = @page.at('table')
       @games ||= []
