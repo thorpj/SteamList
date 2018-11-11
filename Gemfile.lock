@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    steamlist (0.1.5)
+    SteamList (0.1.7)
 
 GEM
   remote: https://rubygems.org/
@@ -30,13 +30,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  SteamList!
   activesupport
   bundler (~> 1.17)
   httparty
   minitest (~> 5.0)
   nokogiri
   rake (~> 10.0)
-  steamlist!
 
 BUNDLED WITH
    1.17.1

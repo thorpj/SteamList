@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "steamlist/version"
+require "SteamList/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "steamlist"
-  spec.version       = "0.1.6"
+  spec.name          = "SteamList"
+  spec.version       = "0.1.7"
   spec.authors       = ["Yunolan"]
   spec.email         = ["thorpejoe4@gmail.com"]
 

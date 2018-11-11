@@ -1,4 +1,4 @@
-require "steamlist/version"
+require "SteamList/version"
 
 module SteamList
   require 'httparty'
