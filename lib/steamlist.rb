@@ -1,6 +1,6 @@
 require "steamlist/version"
 
-module Steamlist
+module SteamList
   require 'httparty'
   require 'nokogiri'
   require 'active_support/inflector'
