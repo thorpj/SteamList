@@ -19,7 +19,7 @@ module SteamList
   rescue LoadError
   end
 
-  class SteamList::Scraper
+  class Scraper
     include ActiveSupport::Inflector
     attr_accessor :games
 
@@ -31,12 +31,18 @@ module SteamList
       @games ||= []
       @headings ||= get_headings
       process_table
+      pp games
 
     end
 
 
     def convert_heading(string)
       string.strip.downcase.parameterize.underscore.to_sym
+    end
+
+    def convert_attribute(attribute)
+      attribute = attribute.gsub " Dedicated Server", ""
+      attribute.downcase.strip
     end
 
     def get_headings
@@ -64,16 +70,18 @@ module SteamList
         new_row << r.strip
       end
       new_row
-      # pp row
     end
 
     def add_game(attributes)
       game = {}
       if ! (attributes.any? { |attribute| @headings.include? convert_heading(attribute)})
-        attributes.zip(@headings).each do |attribute, heading|
-          game[heading] = attribute || ""
-        end
+        if !(@games.any? { |game| game[:server] == convert_attribute(attributes[0]) })
+          attributes.zip(@headings).each do |attribute, heading|
+            attribute = convert_attribute(attribute)
+            game[heading] = attribute || ""
+          end
         @games << game
+        end
       end
     end
 
@@ -86,8 +94,8 @@ module SteamList
 
     def find_id(name)
       found = {}
-      games.each do |game|
-        if game['server'] == name.lower() and !(found)
+      @games.each do |game|
+        if game[:server] == name.downcase and found == {}
           found = game
         end
       end
@@ -96,4 +104,3 @@ module SteamList
 
   end
 end
-
