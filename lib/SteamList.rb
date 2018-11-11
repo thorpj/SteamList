@@ -17,7 +17,7 @@ module SteamList
 
 
     def initialize()
-      config = YAML.load_file('config.yaml')
+      config = YAML.load_file(xFile.expand_path('../../config.yaml'), File.dirname(__FILE__))
 
       document = HTTParty.get(config['url'])
       @page ||= Nokogiri::HTML(document)
