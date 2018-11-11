@@ -6,6 +6,11 @@ module SteamList
   require 'active_support/inflector'
   require 'yaml'
 
+  def test
+    puts "111111111111111"
+    return "22222222222"
+  end
+
 
   class Scraper
     include ActiveSupport::Inflector

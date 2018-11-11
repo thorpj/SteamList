@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    SteamList (0.1.7)
+    SteamList (0.1.8)
 
 GEM
   remote: https://rubygems.org/
