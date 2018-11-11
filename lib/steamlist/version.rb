@@ -1,3 +1,3 @@
-module Steamlist
-  VERSION = "0.1.3"
+module SteamList
+  VERSION = "0.1.4"
 end
