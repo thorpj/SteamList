@@ -14,6 +14,8 @@ module SteamList
       @config[k] = v
     end
 
+    public
+
     def url(val)
       @config[:url] = val
     end

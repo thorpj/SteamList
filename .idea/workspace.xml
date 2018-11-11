@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d618f298-bc82-468d-847e-2ed06e12296d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SteamList-0.2.6.gem" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SteamList.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/SteamList.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SteamList.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SteamList.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/SteamList/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SteamList/config.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,13 +68,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gemspec" value="17" />
-          <entry key="rb" value="823" />
+          <entry key="gemspec" value="18" />
+          <entry key="rb" value="831" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ruby" value="840" />
+          <entry key="Ruby" value="849" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/SteamList/config.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -209,8 +207,8 @@
         <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/lib/steamlist.rb" />
         <option value="$PROJECT_DIR$/config.rb" />
-        <option value="$PROJECT_DIR$/lib/SteamList/config.rb" />
         <option value="$PROJECT_DIR$/lib/SteamList.rb" />
+        <option value="$PROJECT_DIR$/lib/SteamList/config.rb" />
         <option value="$PROJECT_DIR$/SteamList.gemspec" />
       </list>
     </option>
@@ -333,12 +331,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541934033514</updated>
       <workItem from="1541934034645" duration="2326000" />
-      <workItem from="1541936524518" duration="2217000" />
+      <workItem from="1541936524518" duration="2381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4543000" />
+    <option name="totallyTimeSpent" value="4707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,7 +351,7 @@
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -366,7 +364,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32956687" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32956687" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -466,6 +464,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SteamList.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -475,15 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SteamList/config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SteamList.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        <state relative-caret-position="288">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
