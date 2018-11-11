@@ -1,3 +1,5 @@
+require_relative 'SteamList/config'
+
 
 module SteamList
   require 'httparty'
