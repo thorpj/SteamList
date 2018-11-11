@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "steamlist/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "steamList"
+  spec.name          = "steamlist"
   spec.version       = SteamList::VERSION
   spec.authors       = ["Yunolan"]
   spec.email         = ["thorpejoe4@gmail.com"]
