@@ -1,4 +1,3 @@
-require "SteamList/version"
 
 module SteamList
   require 'httparty'
@@ -12,21 +11,20 @@ module SteamList
   end
 
 
-  class Scraper
+  class SteamList::Scraper
     include ActiveSupport::Inflector
     attr_accessor :games
 
 
-    def initialize(url)
+    def initialize()
       config = YAML.load_file('config.yaml')
 
-      @url = url
       document = HTTParty.get(config['url'])
       @page ||= Nokogiri::HTML(document)
       @table = @page.at('table')
       @games ||= []
       @headings ||= get_headings
-      scraper.process_table
+      process_table
 
     end
 
@@ -92,3 +90,4 @@ module SteamList
 
   end
 end
+
