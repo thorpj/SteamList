@@ -10,7 +10,7 @@ module SteamList
     attr_accessor :games
 
     def initialize
-      config = YAML.load_file(File.expand_path('../../config.yaml'), File.dirname(__FILE__))
+      config = YAML.load_file(File.expand_path('../../config.yaml', File.dirname(__FILE__)))
 
       document = HTTParty.get(config['url'])
       @page ||= Nokogiri::HTML(document)
