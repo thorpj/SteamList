@@ -5,7 +5,7 @@ require "steamlist/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "steamlist"
-  spec.version       = SteamList::VERSION
+  spec.version       = "0.1.6"
   spec.authors       = ["Yunolan"]
   spec.email         = ["thorpejoe4@gmail.com"]
 
