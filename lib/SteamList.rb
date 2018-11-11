@@ -5,13 +5,22 @@ module SteamList
   require 'active_support/inflector'
   require 'yaml'
 
+  mattr_accessor :configuration
+  self.configuration ||= SteamList::Config.new
+  def SteamList.config
+    yield self.configuration if block_given?
+    self.configuration.config
+  end
+  begin
+    require File.expand_path('../config.rb', File.dirname(__FILE__))
+  rescue LoadError
+  end
+
   class SteamList::Scraper
     include ActiveSupport::Inflector
     attr_accessor :games
 
-    def initialize
-      config = YAML.load_file(File.expand_path('../../config.yaml', File.dirname(__FILE__)))
-
+    def initialize(config)
       document = HTTParty.get(config['url'])
       @page ||= Nokogiri::HTML(document)
       @table = @page.at('table')
