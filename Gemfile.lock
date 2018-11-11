@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    SteamList (0.2.9)
+    SteamList (0.3.1)
       active_attr (~> 0.11.0)
       activesupport (~> 5.2)
 

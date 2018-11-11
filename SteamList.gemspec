@@ -5,7 +5,7 @@ require "SteamList/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "SteamList"
-  spec.version       = "0.3.0"
+  spec.version       = "0.3.1"
   spec.authors       = ["Yunolan"]
   spec.email         = ["thorpejoe4@gmail.com"]
 
@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   # spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
   #   `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   # end
-  spec.files = ["lib/SteamList.rb"]
+  spec.files = ["lib/SteamList.rb", "lib/SteamList/SteamList.rb"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
