@@ -5,7 +5,7 @@ require "SteamList/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "SteamList"
-  spec.version       = "0.2.8"
+  spec.version       = "0.2.9"
   spec.authors       = ["Yunolan"]
   spec.email         = ["thorpejoe4@gmail.com"]
 
@@ -40,4 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
+
+  spec.add_dependency "activesupport", "~> 5.2"
+  spec.add_dependency "active_attr", "~> 0.11.0"
 end

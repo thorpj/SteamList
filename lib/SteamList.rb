@@ -1,9 +1,10 @@
 require_relative 'SteamList/config'
 
-
 module SteamList
   require 'httparty'
   require 'nokogiri'
+  require 'active_support'
+  require 'active_attr'
   require 'active_support/inflector'
   require 'yaml'
 
@@ -22,7 +23,8 @@ module SteamList
     include ActiveSupport::Inflector
     attr_accessor :games
 
-    def initialize(config)
+    def initialize
+      config = SteamList.config
       document = HTTParty.get(config[:url])
       @page ||= Nokogiri::HTML(document)
       @table = @page.at('table')
