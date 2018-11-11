@@ -5,18 +5,11 @@ module SteamList
   require 'active_support/inflector'
   require 'yaml'
 
-  def test
-    puts "111111111111111"
-    return "22222222222"
-  end
-
-
   class SteamList::Scraper
     include ActiveSupport::Inflector
     attr_accessor :games
 
-
-    def initialize()
+    def initialize
       config = YAML.load_file(File.expand_path('../../config.yaml'), File.dirname(__FILE__))
 
       document = HTTParty.get(config['url'])
